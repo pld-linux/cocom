@@ -2,7 +2,7 @@ Summary:	cocom
 Summary(pl):	cocom
 Name:		cocom
 Version:	0.995
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		Base
 Source0:	http://osdn.dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
@@ -21,6 +21,7 @@ Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %package devel
 Summary:	cocom-devel
 Group:		Base
+Requires:	%{name} = %{epoch}:%{version}-%{release}
 %description devel
 %description devel -l pl
 
