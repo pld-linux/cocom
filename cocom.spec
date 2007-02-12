@@ -1,6 +1,6 @@
 # TODO: revise packaging?
 Summary:	COCOM tool set
-Summary(pl):	Zestaw narzêdzi COCOM
+Summary(pl.UTF-8):   Zestaw narzÄ™dzi COCOM
 Name:		cocom
 Version:	0.995
 Release:	0.2
@@ -19,25 +19,25 @@ DINO as an example of the tool set usage. The tool set is aimed to
 use on Unixes of different flavors. COCOM also has been ported also
 into WIN32 environment.
 
-%description -l pl
-To jest zestaw narzêdzi COCOM (arsena³ rosyjski), zorientowany na
-tworzenie kompilatorów, kompilatorów skro¶nych, interpreterów i
-innych procesorów jêzyków. Pakiet zawiera tak¿e interpreter jêzyka
-DINO jako przyk³ad u¿ycia tego zestawu narzêdzi. Narzêdzia s±
-przeznaczone do u¿ywania na ró¿nych uniksach, ale zosta³y sportowane
-tak¿e do ¶rodowiska Win32.
+%description -l pl.UTF-8
+To jest zestaw narzÄ™dzi COCOM (arsenaÅ‚ rosyjski), zorientowany na
+tworzenie kompilatorÃ³w, kompilatorÃ³w skroÅ›nych, interpreterÃ³w i
+innych procesorÃ³w jÄ™zykÃ³w. Pakiet zawiera takÅ¼e interpreter jÄ™zyka
+DINO jako przykÅ‚ad uÅ¼ycia tego zestawu narzÄ™dzi. NarzÄ™dzia sÄ…
+przeznaczone do uÅ¼ywania na rÃ³Å¼nych uniksach, ale zostaÅ‚y sportowane
+takÅ¼e do Å›rodowiska Win32.
 
 %package devel
 Summary:	COCOM header files
-Summary(pl):	Pliki nag³ówkowe COCOM
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe COCOM
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 COCOM header files.
 
-%description devel -l pl
-Pliki nag³ówkowe COCOM.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe COCOM.
 
 %prep
 %setup -q
