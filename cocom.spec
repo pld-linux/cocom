@@ -1,6 +1,6 @@
 # TODO: revise packaging?
 Summary:	COCOM tool set
-Summary(pl.UTF-8):   Zestaw narzędzi COCOM
+Summary(pl.UTF-8):	Zestaw narzędzi COCOM
 Name:		cocom
 Version:	0.995
 Release:	0.2
@@ -29,7 +29,7 @@ także do środowiska Win32.
 
 %package devel
 Summary:	COCOM header files
-Summary(pl.UTF-8):   Pliki nagłówkowe COCOM
+Summary(pl.UTF-8):	Pliki nagłówkowe COCOM
 Group:		Development/Languages
 Requires:	%{name} = %{version}-%{release}
 
