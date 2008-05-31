@@ -2,14 +2,16 @@
 Summary:	COCOM tool set
 Summary(pl.UTF-8):	Zestaw narzędzi COCOM
 Name:		cocom
-Version:	0.995
+Version:	0.996
 Release:	0.2
 License:	GPL
 Group:		Development/Languages
 Source0:	http://dl.sourceforge.net/cocom/%{name}-%{version}.tar.gz
-# Source0-md5:	94040380e63afd6cb12d2abacb87f8c8
+# Source0-md5:	c95c5504fd76f4e05c4155ed840cc756
 URL:		http://cocom.sourceforge.net/
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRequires:	autoconf
+BuildRequires:	bison
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is COCOM tool set (Russian Armoury) oriented onto the creation
@@ -43,7 +45,10 @@ Pliki nagłówkowe COCOM.
 %setup -q
 
 %build
-%configure2_13
+cd REGEX
+%{__autoconf}
+cd ..
+%configure
 %{__make}
 
 %install
@@ -57,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGES README armoury.html cocom.html *.jpg
+%doc CHANGES README cocom.html cocom.txt
 %attr(755,root,root) %{_bindir}/*
 %{_libdir}/libcocom*.a
 %{_libdir}/*.sprut
